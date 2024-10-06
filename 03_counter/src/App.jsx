@@ -11,22 +11,26 @@ function App() {
   
   let [counter, setVertika ] = useState(5);
 
-  const addValue= () => {
+  const addValue = () => {
     // console.log("value added",Math.random())
-    console.log("value added",counter)
+    // console.log("value added",counter)
     // counter++;
-    if(counter < 20)
-      setVertika(counter=counter+1)
+    // setVertika(counter+1)
+    // setVertika(counter+1)
+    // setVertika(counter+1)
+    // setVertika(counter+1)
+    setVertika(prevCounter => prevCounter+1)
+    setVertika(prevCounter => prevCounter+1)
+    setVertika(prevCounter => prevCounter+1)
+    setVertika(prevCounter => prevCounter+1)
   }
 
   const reduceValue = () => {
     // console.log("value reduced",Math.random())
-    console.log("value reduced",counter)
+    // console.log("value reduced",counter)
     // counter--;
-    if(counter > 0)
-      setVertika(counter=counter-1)
+    setVertika(prevCounter => prevCounter-4)
   }
-
   return (
     <>
       <h1>chai aur react</h1>
